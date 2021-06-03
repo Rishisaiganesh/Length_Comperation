@@ -20,7 +20,15 @@ namespace Length_of_line
                 Console.WriteLine("Lines are Not Equal");
             }
 
-
+            float Compare = Line1.CompareTo(Line2);
+            if (Compare == 0)
+            {
+                Console.WriteLine("Both Line are  Same");
+            }
+            else
+            {
+                Console.WriteLine("They are not Same");
+            }
             Console.ReadKey();
         }
     }
