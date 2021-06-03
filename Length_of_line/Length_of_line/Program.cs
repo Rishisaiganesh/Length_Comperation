@@ -8,8 +8,21 @@ namespace Length_of_line
         {
             Console.WriteLine("Length of line");
             Lengthofline Length = new Lengthofline();
-            Length.Calculate(1, 1, 1, 1);
+            float Line1 = Length.Calculate(1, 1, 1, 2);
+            float Line2 = Length.Calculate(1, 2, 2, 2);
+            Boolean Check_equality = Line1.Equals(Line2);
+            if (Check_equality == true)
+            {
+                Console.WriteLine("Lines are Equal in length");
+            }
+            else
+            {
+                Console.WriteLine("Lines are Not Equal");
+            }
+
+
             Console.ReadKey();
         }
     }
+
 }
